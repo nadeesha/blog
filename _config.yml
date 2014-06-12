@@ -88,4 +88,3 @@ exclude_generator:
 deploy:
   type: github
   repo: git@github.com:ncthis/ncthis.github.io.git
-  branch: master
