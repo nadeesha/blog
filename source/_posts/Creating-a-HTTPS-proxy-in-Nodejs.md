@@ -1,6 +1,8 @@
 title: 'Creating a HTTPS proxy in Node.js'
 date: 2013-10-07 14:35:15
-tags: Node.js, devops
+tags: 
+- node.js 
+- devops
 ---
 Recently, I needed to mock a dev box to act as the production environment to do some debugging on a Node.js express web app. The problem was that the calls that are received by the said dev box are all HTTPS, (hence received on port 443) and in the local environment, Node is not configured to run on HTTPS, and not on port 80 or 443.
 
