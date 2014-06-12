@@ -6,8 +6,7 @@ tags:
 ---
 Recently, I needed to mock a dev box to act as the production environment to do some debugging on a Node.js express web app. The problem was that the calls that are received by the said dev box are all HTTPS, (hence received on port 443) and in the local environment, Node is not configured to run on HTTPS, and not on port 80 or 443.
 
-**Quick and Dirty solution is to:**
-alter the Node server to start on port 443, after giving a fake HTTPS key and a certificate.
+Quick and Dirty solution is to, alter the Node server to start on port 443, after giving a fake HTTPS key and a certificate.
 
 ```Javascript
 function HttpServer(handlers) {
